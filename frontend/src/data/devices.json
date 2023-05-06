@@ -1,0 +1,68 @@
+[
+    {
+      "title": "TLPM",
+      "description": "Power Meter"
+    },
+    {
+      "title": "CBEAM",
+      "description": "CNC Machine"
+    },
+    {
+        "title": "KBD101",
+        "description": "Brushless DC motor"
+      },
+      {
+        "title": "ITLA",
+        "description": "Pure Photonics Laser"
+      },
+      {
+        "title": "WFS",
+        "description": "Sensor"
+      },
+      {
+        "title": "CBEAM",
+        "description": "CNC Machine"
+      },
+      {
+          "title": "KBD101",
+          "description": "Brushless DC motor"
+        },
+        {
+          "title": "ITLA",
+          "description": "Pure Photonics Laser"
+        },
+        {
+            "title": "TLPM",
+            "description": "Power Meter"
+          },
+          {
+            "title": "CBEAM",
+            "description": "CNC Machine"
+          },
+          {
+              "title": "KBD101",
+              "description": "Brushless DC motor"
+            },
+            {
+              "title": "ITLA",
+              "description": "Pure Photonics Laser"
+            },
+            {
+              "title": "WFS",
+              "description": "Sensor"
+            },
+            {
+              "title": "CBEAM",
+              "description": "CNC Machine"
+            },
+            {
+                "title": "KBD101",
+                "description": "Brushless DC motor"
+              },
+              {
+                "title": "ITLA",
+                "description": "Pure Photonics Laser"
+              }
+      
+
+  ]
