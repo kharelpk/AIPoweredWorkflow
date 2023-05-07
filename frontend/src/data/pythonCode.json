@@ -1,0 +1,4 @@
+{
+    "code": "def add(a, b):\n  return a + b\n\nresult = add(3, 4)\nprint(result)"
+  }
+  
