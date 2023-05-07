@@ -8,8 +8,16 @@ const InputBar = ({onSend}) => {
 
   const handleSend = () => {
     console.log('sent');
-    onSend(inputText);
+    console.log(inputText)
+    // onSend(inputText);
+
+    if (inputText.trim()) {
+        onSend(inputText);
+        setInputText('');
+      }
   };
+
+  
 
   return (
     <div className="input-bar">
