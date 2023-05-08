@@ -68,7 +68,7 @@ const Home = () => {
     Below I will provide class names and available methods for drivers to control hardware. 
     It is important that you use methods provided for each Python driver class when communicating with the instruments. 
     Make sure to comment the code and explain to users what assumptions you made in detail and the result should always have three sections "Assumptions", "Explanation", and "Code".\n "---" \n${textContent}\n\n`;
-    console.log(prompt);
+    // console.log(prompt);
     const data = {
       model: "gpt-3.5-turbo",
       messages: [{ role: "user", content: prompt }],
@@ -84,18 +84,15 @@ const Home = () => {
       const result = await response.json();
       const parsedResponse = parseAPIResponse(result.choices[0].message.content);
 
-    //   console.log("CODE::::"+parsedResponse.code)
-    //   console.log("INFO::::"+parsedResponse.otherInfo)
 
       setApiInfo(parsedResponse.otherInfo);
       setApiCode(parsedResponse.code);
 
-    //   setPythonCode(pythonCodeData.code);
       
       setDisplayCode(true);
       setThinking(false); 
 
-      console.log(result.choices[0].message.content);
+    //   console.log(result.choices[0].message.content);
       
     } catch (error) {
       console.error("Error fetching answer from OpenAI API:", error);
