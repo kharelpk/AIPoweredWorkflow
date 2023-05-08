@@ -64,7 +64,7 @@ const CodeDisplay = ({ code }) => {
             theme: 'vs-dark',
             readOnly: true,
           }}
-          height="50vh"
+          height="55vh"
           width = "100%"
         />
       </div>

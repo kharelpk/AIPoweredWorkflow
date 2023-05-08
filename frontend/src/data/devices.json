@@ -1,67 +1,83 @@
 [
     {
       "title": "TLPM",
-      "description": "Power Meter"
+      "description": "Power Meter",
+      "info":"Device Info... A lot of Info. For sure!"
     },
     {
       "title": "CBEAM",
-      "description": "CNC Machine"
+      "description": "CNC Machine",
+      "info":"Device Info... A lot of Info. For sure!"
     },
     {
         "title": "KBD101",
-        "description": "Brushless DC motor"
+        "description": "Brushless DC motor",
+        "info":"Device Info... A lot of Info. For sure!"
       },
       {
         "title": "ITLA",
-        "description": "Pure Photonics Laser"
+        "description": "Pure Photonics Laser",
+        "info":"Device Info... A lot of Info. For sure!"
       },
       {
         "title": "WFS",
-        "description": "Sensor"
+        "description": "Sensor",
+        "info":"Device Info... A lot of Info. For sure!"
       },
       {
         "title": "CBEAM",
-        "description": "CNC Machine"
+        "description": "CNC Machine",
+        "info":"Device Info... A lot of Info. For sure!"
       },
       {
           "title": "KBD101",
-          "description": "Brushless DC motor"
+          "description": "Brushless DC motor",
+          "info":"Device Info... A lot of Info. For sure!"
         },
         {
           "title": "ITLA",
-          "description": "Pure Photonics Laser"
+          "description": "Pure Photonics Laser",
+          "info":"Device Info... A lot of Info. For sure!"
         },
         {
             "title": "TLPM",
-            "description": "Power Meter"
+            "description": "Power Meter",
+            "info":"Device Info... A lot of Info. For sure!"
           },
           {
             "title": "CBEAM",
-            "description": "CNC Machine"
+            "description": "CNC Machine",
+            "info":"Device Info... A lot of Info. For sure!"
           },
           {
               "title": "KBD101",
-              "description": "Brushless DC motor"
+              "description": "Brushless DC motor",
+              "info":"Device Info... A lot of Info. For sure!"
             },
             {
               "title": "ITLA",
-              "description": "Pure Photonics Laser"
+              "description": "Pure Photonics Laser",
+              "info":"Device Info... A lot of Info. For sure!"
             },
             {
               "title": "WFS",
-              "description": "Sensor"
+              "description": "Sensor",
+              "info":"Device Info... A lot of Info. For sure!"
             },
             {
               "title": "CBEAM",
-              "description": "CNC Machine"
+              "description": "CNC Machine",
+              "info":"Device Info... A lot of Info. For sure!"
             },
             {
                 "title": "KBD101",
-                "description": "Brushless DC motor"
+                "description": "Brushless DC motor",
+                "info":"Device Info... A lot of Info. For sure!"
               },
               {
                 "title": "ITLA",
-                "description": "Pure Photonics Laser"
+                "description": "Pure Photonics Laser",
+                "info":"Device Info... A lot of Info. For sure!"
               }
       
 

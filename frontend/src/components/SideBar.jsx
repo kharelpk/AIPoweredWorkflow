@@ -30,7 +30,7 @@ const Sidebar = ({ visible }) => {
       <div className="flex justify-center overflow-y-auto h-full pb-4 custom-scrollbar card-container">
         <div className="grid grid-cols-2 gap-2 mt-4">
           {devices.map((device, index) => (
-            <DeviceCard key={index} title={device.title} description={device.description} />
+            <DeviceCard key={index} title={device.title} description={device.description} info={device.info} />
           ))}
         </div>
       </div>
