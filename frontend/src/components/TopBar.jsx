@@ -13,7 +13,7 @@ const Topbar = ({ onBurgerMenuClick }) => {
             </button>
           </li>
           <li className="inline-block">
-            <a href="/">
+            <a href="https://ctrlease.gatsbyjs.io">
               <img src={logo} alt="Logo" className="h-9 w-auto text-white fill-current" />
             </a>
           </li>
@@ -24,7 +24,7 @@ const Topbar = ({ onBurgerMenuClick }) => {
         <ul>
           <li>
             <a
-              href="/"
+              href="https://ctrlease.gatsbyjs.io/newsletter/"
               className="bg-[#26947A] text-white px-4 py-2.5 rounded hover:bg-[#1D7A66]"
             >
               Subscribe

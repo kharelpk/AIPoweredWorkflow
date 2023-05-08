@@ -2,82 +2,92 @@
     {
       "title": "TLPM",
       "description": "Power Meter",
-      "info":"Device Info... A lot of Info. For sure!"
+      "info":"This Thorlabs Power Meter can be controlled via USB communication."
     },
     {
-      "title": "CBEAM",
-      "description": "CNC Machine",
-      "info":"Device Info... A lot of Info. For sure!"
+      "title": "uEYE",
+      "description": "Camera",
+      "info":"This IDS imaging uEye camera can be controlled via USB communication."
     },
     {
-        "title": "KBD101",
-        "description": "Brushless DC motor",
-        "info":"Device Info... A lot of Info. For sure!"
+        "title": "CCS",
+        "description": "Spectrometer",
+        "info":"This Thorlabs compact spectrometer can be controlled via USB communication."
+      },
+    {
+        "title": "ITLA",
+        "description": "Laser",
+        "info":"This tunable laser in the C and L-band from Pure-Photonics can be controlled via serial communication."
       },
       {
-        "title": "ITLA",
-        "description": "Pure Photonics Laser",
-        "info":"Device Info... A lot of Info. For sure!"
+        "title": "TLX3",
+        "description": "Laser",
+        "info":"This tunable O-band laser source from Thorlabs can be controlled via serial communication using USB or RS-232 ports."
+      },
+      {
+        "title": "CBEAM",
+        "description": "CNC machine",
+        "info":"The CBEAM CNC machine can be controlled via serial communication."
       },
       {
         "title": "WFS",
         "description": "Sensor",
-        "info":"Device Info... A lot of Info. For sure!"
+        "info":"This Thorlabs wavefront sensor can be controlled via USB communication."
       },
       {
-        "title": "CBEAM",
-        "description": "CNC Machine",
-        "info":"Device Info... A lot of Info. For sure!"
-      },
-      {
-          "title": "KBD101",
-          "description": "Brushless DC motor",
-          "info":"Device Info... A lot of Info. For sure!"
+          "title": "EDFA300S",
+          "description": "Optical amplifier",
+          "info":"This Thorlabs Erbuium doped fiber amplifier (EDFA) 300s can be controlled via a usb interface."
         },
         {
-          "title": "ITLA",
-          "description": "Pure Photonics Laser",
-          "info":"Device Info... A lot of Info. For sure!"
+          "title": "DC4100",
+          "description": "LED driver",
+          "info":"This Thorlabs DC4100 4-Channel LED Driver can be controlled via USB communication."
         },
         {
-            "title": "TLPM",
-            "description": "Power Meter",
-            "info":"Device Info... A lot of Info. For sure!"
+            "title": "UPLED",
+            "description": "LED driver",
+            "info":"This Thorlabs upLED driver can be controlled via USB communication."
           },
           {
             "title": "CBEAM",
             "description": "CNC Machine",
-            "info":"Device Info... A lot of Info. For sure!"
+            "info":"This CNC machine from Openbuilds can be controlled via serial communication."
           },
           {
               "title": "KBD101",
-              "description": "Brushless DC motor",
-              "info":"Device Info... A lot of Info. For sure!"
+              "description": "Motor controller",
+              "info":"This Thorlabs KBD101 Brushless DC Motor controller can be controlled via USB communication."
             },
             {
-              "title": "ITLA",
-              "description": "Pure Photonics Laser",
-              "info":"Device Info... A lot of Info. For sure!"
+              "title": "KIM101",
+              "description": "Motor controller",
+              "info":"The Thorlabs KIM101 Piezo Inertial Motor controller can be controlled via USB communication."
             },
             {
-              "title": "WFS",
-              "description": "Sensor",
-              "info":"Device Info... A lot of Info. For sure!"
+              "title": "KST101",
+              "description": "Motor controller",
+              "info":"The Thorlabs KST101 KCube Stepper Motor Controller can be controlled via USB communication."
             },
             {
-              "title": "CBEAM",
-              "description": "CNC Machine",
-              "info":"Device Info... A lot of Info. For sure!"
+              "title": "LK220",
+              "description": "Temperature control",
+              "info":"This Thermoelectric liquid chiller from Thorlabs can be controlled via serial communication using usb interface."
             },
             {
-                "title": "KBD101",
-                "description": "Brushless DC motor",
-                "info":"Device Info... A lot of Info. For sure!"
+                "title": "LCC25",
+                "description": "Liquid Crystal Controller",
+                "info":"This LCC25 Liquid Crystal Controller from Thorlabs can be controlled via USB communication."
               },
               {
-                "title": "ITLA",
-                "description": "Pure Photonics Laser",
-                "info":"Device Info... A lot of Info. For sure!"
+                "title": "MX10B",
+                "description": "Transmitter",
+                "info":"This MX10B Reference Transmitter from Thorlabs can be controlled via serial communication."
+              },
+              {
+                "title": "PAX1000",
+                "description": "Polarimeter",
+                "info":"This Thorlabs Polarimeter can be controlled via USB using SCPI communication protocol."
               }
       
 

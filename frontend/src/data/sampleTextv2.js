@@ -37,7 +37,7 @@ File: tllcc25.py
     _test_for_error(self, result)
 File: ueyewrapper.py
   Class: UYECAM
-  Docstring: Wrapper class for controlling uEye cameras.
+  Docstring: Wrapper class for controlling uEye machine vision cameras.
   Functions:
     __init__(self, device_id)
     connect(self)
