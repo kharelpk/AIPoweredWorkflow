@@ -62,7 +62,7 @@ const CodeDisplay = ({ code }) => {
           options={{
             fontSize: 14,
             theme: 'vs-dark',
-            readOnly: true,
+            readOnly: false,
           }}
           height="55vh"
           width = "100%"

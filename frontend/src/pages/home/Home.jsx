@@ -55,7 +55,7 @@ const Home = () => {
 
   async function sendRequestToGPT3(inputText, textContent) {
     setThinking(true); 
-    const openAI_API_KEY = "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";
+    const openAI_API_KEY = process.env.REACT_APP_API_KEY;
     const apiUrl = "https://api.openai.com/v1/chat/completions";
   
     const headers = {
@@ -63,16 +63,16 @@ const Home = () => {
       Authorization: `Bearer ${openAI_API_KEY}`,
     };
   
-    const prompt = `My question is: ${inputText}\n\n. 
+    const prompt = `My task is: ${inputText}\n\n 
     Write me a python code to accomplish this task. 
-    Below I will provide you all the drivers written in python with classes names and available methods. 
-    It is important use methods provided below for each class. 
-    Make sure to comment the code and explain to users what assumptions you made so the result should always have three sections "Assumptions", "Explanation", and "Code"\n\n${textContent}\n\n`;
+    Below I will provide class names and available methods for drivers to control hardware. 
+    It is important that you use methods provided for each Python driver class when communicating with the instruments. 
+    Make sure to comment the code and explain to users what assumptions you made in detail and the result should always have three sections "Assumptions", "Explanation", and "Code".\n "---" \n${textContent}\n\n`;
     console.log(prompt);
     const data = {
       model: "gpt-3.5-turbo",
       messages: [{ role: "user", content: prompt }],
-      temperature: 0.70,
+      temperature: 1.0,
     };
   
     try {
@@ -112,7 +112,7 @@ const Home = () => {
         <Sidebar visible={sidebarVisible} />
         <Layout>
           <h5 className="text-md font-bold mt-10 sticky top-0 text-white">
-            GENERATE AUTOMATION WORKFLOW
+            AUTOMATION WORKFLOW
           </h5>
           
           <InputBar className="mt-25" onSend={(text) => {
@@ -140,14 +140,15 @@ const Home = () => {
 
             {showExamplePrompts && (
             <div className="examples mt-4 text-white">
-                    <h5 className="text-md font-bold sticky top-0 text-white">
+                    <p className="text-md sticky top-0 text-[#26947a] mb-4">Automate a wide range of devices like motorized stages, lasers, sensors, cameras and so on.</p>
+                    <h5 className="text-md font-bold sticky mt-10 top-0 text-white">
                     EXAMPLE PROMPTS:
                 </h5>
                     <ul className="list-disc">
-                    <li className="ml-10 mt-4 text-white"> "I want to synchronously acquire power readings and ueye camera images. The power readings are stored in a database whereas the camera images are stored in numpy array."</li>
                     <li className="ml-10 mt-4 text-white">"Read power from a Thorlabs power meter and get average power meter reading after 2 seconds."</li>
                     <li className="ml-10 mt-4 text-white">"Home the CNC machine and take a picture using the ueye camera."</li>
                     <li className="ml-10 mt-4 text-white">"I have two Thorlabs stages with brushless dc motor controllers. I am using the pure photonics laser and measuring optical power using Thorlabs power meter. I want to run gradient search optimization of the two stages to maximize optical power."</li>
+                    {/* <li className="ml-10 mt-4 text-white"> "I want to synchronously acquire power readings from a Thorlabs Power meter and images from a ueye camera. The power readings are stored in a database whereas the camera images are stored in numpy array."</li> */}
                     </ul>
                 </div>
             )}

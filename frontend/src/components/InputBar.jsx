@@ -3,6 +3,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faPaperPlane } from '@fortawesome/free-solid-svg-icons';
 import './InputBar.scss';
 
+
 const InputBar = ({onSend, onFocus}) => {
   const [inputText, setInputText] = useState('');
 
@@ -26,7 +27,7 @@ const InputBar = ({onSend, onFocus}) => {
         value={inputText}
         onChange={(e) => setInputText(e.target.value)}
         onFocus={onFocus}
-        placeholder="Type your text here..."
+        placeholder="I want to ..."
       />
       <button className="send-button" onClick={handleSend}>
         <FontAwesomeIcon icon={faPaperPlane} />
