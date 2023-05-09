@@ -254,7 +254,6 @@ const Home = () => {
                     EXAMPLE PROMPTS:
                 </h5>
                     <ul className="list-disc">
-                    Here are the corrected paragraphs:
 
                     <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"Read power from a Thorlabs power meter for 2 seconds and calculate the average power meter reading."</li>
                     <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"Home the CNC machine, and take a picture using the ueye camera after homing."</li>
