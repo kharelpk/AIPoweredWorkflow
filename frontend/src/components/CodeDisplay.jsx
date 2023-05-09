@@ -50,7 +50,7 @@ const CodeDisplay = ({ code }) => {
   return (
     <div className="code-display">
       <div className="code-display-header">
-        <h6>Generated Code</h6>
+        <h6 className='text-[#26947a]'>Generated Code</h6>
         <button onClick={copyCodeToClipboard}>
           <FontAwesomeIcon icon={faCopy} /> Copy
         </button>

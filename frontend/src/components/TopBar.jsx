@@ -18,7 +18,7 @@ const Topbar = ({ onBurgerMenuClick }) => {
             </a>
           </li>
           <li className="inline-block text-white">
-            AI Powered Automation Platform
+            AI-Powered Automation
           </li>
         </ul>
         <ul>

@@ -1,0 +1,92 @@
+{
+    "CBEAM": {
+      "python_filename": "cbeam.py",
+      "class_docstring": "Class used to communicate with the CBEAM CNC machine from Openbuilds. ",
+      "all_info_with_filename": "File: cbeam.py\nClass: CBEAM\nDocstring: Class used to communicate with the CBEAM CNC machine from Openbuilds. \nFunctions:\n  __init__(self, address, baudrate, timeout)\n  connect(self)\n  disconnect(self)\n  _send_command(self, command)\n  wait_for_move_complete(self)\n  run_gcode(self, filename)\n  set_unlock(self)\n  set_position_X(self, value)\n  set_position_Y(self, value)\n  set_position_Z(self, value)\n  set_grbl_command(self, command)\n  set_home(self)"
+    },
+    "TLDC4100": {
+      "python_filename": "tldc4100.py",
+      "class_docstring": "Class used to control the Thorlabs DC4100 4-channel LED controller.",
+      "all_info_with_filename": "File: tldc4100.py\nClass: TLDC4100\nDocstring: Class used to control the Thorlabs DC4100 4-channel LED controller.\nFunctions:\n  __init__(self, dll_path)\n  init(self, resource_name, id_query, reset_device)\n  close(self, instrument_handle)\n  identification_query(self, instrument_handle)\n  get_head_info(self, instrument_handle, channel)\n  set_led_on_off(self, instrument_handle, channel, led_on_off)\n  set_percental_brightness(self, instrument_handle, channel, brightness)\n  __test_for_error(self, instrument_handle, status)\n  __throw_error(self, instrument_handle, status)"
+    },
+    "TLLCC25": {
+      "python_filename": "tllcc25.py",
+      "class_docstring": "Class used to control the Thorlabs LCC25 Liquid crystal controller. \nNeeds LCC25CommandLib_win32.dll",
+      "all_info_with_filename": "File: tllcc25.py\nClass: TLLCC25\nDocstring: Class used to control the Thorlabs LCC25 Liquid crystal controller. \nNeeds LCC25CommandLib_win32.dll\nFunctions:\n  __init__(self, dll_path)\n  list(self)\n  get_ports(self)\n  open(self, serial_no, n_baud, timeout)\n  set_output_mode(self, hdl, mode)\n  get_output_mode(self, hdl)\n  set_voltage1(self, hdl, vol)\n  set_voltage2(self, hdl, vol)\n  close(self, hdl)\n  __test_for_error(self, result)"
+    },
+    "TLX3": {
+      "python_filename": "tlx3.py",
+      "class_docstring": "Class used to control the TLX3 tunable O-band laser from Thorlabs. RS-232 communication is used to control the laser.",
+      "all_info_with_filename": "File: tlx3.py\nClass: TLX3\nDocstring: Class used to control the TLX3 tunable O-band laser from Thorlabs. RS-232 communication is used to control the laser.\nFunctions:\n  __init__(self, com_port)\n  connect(self)\n  disconnect(self)\n  send_command(self, command)\n  set_laser_on(self, value)\n  get_laser_status(self)\n  get_laser_power(self)\n  get_maximum_wavelength(self)\n  get_minimum_wavelength(self)\n  set_wavelength_offset(self, offset)\n  set_continuous_laser_sweep(self, start_wavelegth, stop_wavelength, sweep_count, speed)\n  set_laser_sweep_reporting(self, enable_reporting)\n  get_laser_sweep_status(self)\n  set_stepped_laser_sweep(self, start_wavelegth, stop_wavelength, step_size, sweep_count, dwell_time)\n  set_stop_sweep(self)\n  set_wavelength(self, wavelength)\n  get_wavelength(self)\n  get_bootloader_version(self)\n  get_application_version(self)\n  get_laser_version(self)\n  get_part_name(self)\n  get_product_name(self)\n  get_serial_number(self)"
+    },
+    "TLKBD101": {
+      "python_filename": "tlkbd101.py",
+      "class_docstring": "Class to control the Thorlabs KBD101 k-cube brushless DC motor.\nNeeds Thorlabs.MotionControl.KCube.BrushlessMotor.dll.",
+      "all_info_with_filename": "File: tlkbd101.py\nClass: TLKBD101\nDocstring: Class to control the Thorlabs KBD101 k-cube brushless DC motor.\nNeeds Thorlabs.MotionControl.KCube.BrushlessMotor.dll.\nFunctions:\n  __init__(self, serial_number, dll_path)\n  build_device_list(self)\n  connect(self)\n  home(self)\n  move_to_position_device_units(self, position)\n  get_device_unit_from_real_value(self, real_value, unit_type)\n  move_to_position_real_units(self, position)\n  set_velocity_parameters_real_units(self, acceleration, max_velocity)\n  set_velocity_parameters_device_units(self, acceleration, max_velocity)\n  get_position(self)\n  set_motor_params(self, counts_per_rev)\n  disconnect(self)"
+    },
+    "TLWFS": {
+      "python_filename": "wfs.py",
+      "class_docstring": "Class used to control the Thorlabs wavefront sensor.",
+      "all_info_with_filename": "File: wfs.py\nClass: TLWFS\nDocstring: Class used to control the Thorlabs wavefront sensor.\nFunctions:\n  __init__(self, dll_path)\n  init(self, resource_name, id_query, reset_device)\n  close(self, instrument_handle)\n  identification_query(self, instrument_handle)\n  take_spotfield_image(self, instrument_handle)\n  get_spotfield_image(self, instrument_handle)\n  __test_for_error(self, instrument_handle, status)\n  __throw_error(self, instrument_handle, status)"
+    },
+    "ITLA": {
+      "python_filename": "itla.py",
+      "class_docstring": "Class for controlling pure photonics tunable laser. RS-232 communication is used to control the laser.",
+      "all_info_with_filename": "File: itla.py\nClass: ITLA\nDocstring: Class for controlling pure photonics tunable laser. RS-232 communication is used to control the laser.\nFunctions:\n  __init__(self, address, baudrate, timeout)\n  connect(self)\n  disconnect(self)\n  _issue_command(self, register, data, rw)\n  _decode_response(self, response)\n  _send_command(self, byte0, byte1, byte2, byte3)\n  _receive_response(self)\n  _wait_until_no_operation(self)\n  _checksum(self, byte0, byte1, byte2, byte3)\n  set_enable_output(self, value)\n  set_power(self, power)\n  get_power(self)\n  set_frequency_THz(self, frequency)\n  get_frequency_THz(self)\n  set_wavelength_nm(self, wavelength)\n  get_wavelength_nm(self, wavelength)\n  get_temperature(self)\n  get_current(self)\n  get_min_power(self)\n  get_max_power(self)\n  get_min_frequency_THz(self)\n  get_max_frequency_THz(self)\n  set_mode(self, mode)"
+    },
+    "UEYECAM": {
+      "python_filename": "ueyecam.py",
+      "class_docstring": "Class for controlling uEye cameras used for machine vision application.",
+      "all_info_with_filename": "File: ueyecam.py\nClass: UEYECAM\nDocstring: Class for controlling uEye cameras used for machine vision application.\nFunctions:\n  __init__(self, device_id)\n  connect(self)\n  get_camera_info(self)\n  get_sensor_info(self)\n  reset_to_default(self)\n  get_aoi(self)\n  set_aoi(self, x, y, width, height)\n  get_colormode(self)\n  set_colormode(self, colormode)\n  allocate_image_memory(self)\n  capture_video(self, wait)\n  inquire_image_mem(self)\n  get_image_data(self)\n  stop_video(self)\n  free_image_memory(self)\n  exit(self)\n  get_bits_per_pixel(self, color_mode)\n  __check_error(self, ret)"
+    },
+    "TLLFL": {
+      "python_filename": "tllfl.py",
+      "class_docstring": "Class to communicate with the Thorlabs Thulium doped Fiber laser via serial communication.",
+      "all_info_with_filename": "File: tllfl.py\nClass: TLLFL\nDocstring: Class to communicate with the Thorlabs Thulium doped Fiber laser via serial communication.\nFunctions:\n  __init__(self, port)\n  send_command(self, command)\n  get_id(self)\n  get_commands(self)\n  set_target_temp(self, temp)\n  get_target_temp(self)\n  get_actual_temp(self)\n  set_current(self, current)\n  get_current(self)\n  get_power(self)\n  get_enable(self)\n  set_enable(self, enable)\n  get_specs(self)\n  set_step(self, step)\n  get_step(self)\n  save_parameters(self)\n  get_status(self)\n  close(self)"
+    },
+    "TLKIM101": {
+      "python_filename": "tlkim101.py",
+      "class_docstring": "A class to control the Thorlabs KIM101 and KIM001 four channel K-cube piezo Inertial Motor Controller.\nNeeds Thorlabs.MotionControl.KCube.IntertialMotor.dll.",
+      "all_info_with_filename": "File: tlkim101.py\nClass: TLKIM101\nDocstring: A class to control the Thorlabs KIM101 and KIM001 four channel K-cube piezo Inertial Motor Controller.\nNeeds Thorlabs.MotionControl.KCube.IntertialMotor.dll.\nFunctions:\n  __init__(self, serial_number, dll_path)\n  build_device_list(self)\n  connect(self, channel)\n  home(self, channel)\n  move_absolute(self, channel, position)\n  move_relative(self, channel, step_size)\n  move_jog(self, channel, direction)\n  move_stop(self, channel)\n  wait_for_move(self, channel)\n  disconnect(self)"
+    },
+    "TLPAX": {
+      "python_filename": "tlpax.py",
+      "class_docstring": "A Python class for controlling the Thorlabs PAX1000 polarimeter using SCPI commands.",
+      "all_info_with_filename": "File: tlpax.py\nClass: TLPAX\nDocstring: A Python class for controlling the Thorlabs PAX1000 polarimeter using SCPI commands.\nFunctions:\n  __init__(self, resource_name)\n  send_command(self, command)\n  query(self, command)\n  get_identification(self)\n  reset(self)\n  operation_complete(self)\n  wait_to_continue(self)\n  self_test(self)\n  close(self)\n  set_averaging_mode(self, mode)\n  get_averaging_mode(self)\n  set_wavelength(self, wavelength)\n  get_wavelength(self)\n  set_power_range_upper(self, value)\n  get_power_range_upper(self)\n  set_power_range_auto(self, value)\n  get_power_range_auto(self)\n  set_power_range_index(self, index)\n  get_power_range_index(self)\n  get_power_range_nominal(self, index)\n  get_latest_primary_measurement_data(self)\n  get_calibration_string(self)\n  set_waveplate_rotation_state(self, state)\n  get_waveplate_rotation_state(self)\n  set_waveplate_rotation_velocity(self, velocity)\n  get_waveplate_rotation_velocity(self)\n  get_waveplate_rotation_velocity_limits(self)"
+    },
+    "TLLK220": {
+      "python_filename": "tllk220.py",
+      "class_docstring": "Class used to control the Thorlabs LK220 thermoelectric liquid chiller via serial communication.\nNeeds Thorlabs.LK220.CommandLibrary-win32.dll.",
+      "all_info_with_filename": "File: tllk220.py\nClass: TLLK220\nDocstring: Class used to control the Thorlabs LK220 thermoelectric liquid chiller via serial communication.\nNeeds Thorlabs.LK220.CommandLibrary-win32.dll.\nFunctions:\n  __init__(self, dll_path)\n  list(self)\n  open(self, serial_no, n_baud, timeout)\n  set_enable(self, hdl, value)\n  set_target_temp(self, hdl, value)\n  close(self, hdl)\n  __test_for_error(self, result)"
+    },
+    "EDFA300S": {
+      "python_filename": "tledfa300s.py",
+      "class_docstring": "Class to control the Erbium-doped Fiber amplifiers (EDFA 300S) from Thorlabs via serial communication.",
+      "all_info_with_filename": "File: tledfa300s.py\nClass: EDFA300S\nDocstring: Class to control the Erbium-doped Fiber amplifiers (EDFA 300S) from Thorlabs via serial communication.\nFunctions:\n  __init__(self, port)\n  send_command(self, command)\n  help(self)\n  enable_laser(self)\n  disable_laser(self)\n  set_laser_diode_current(self, current)\n  get_laser_diode_current(self)\n  get_status(self)\n  run_pid_power_control(self, power)\n  run_pid_gain_control(self, gain)\n  close(self)"
+    },
+    "MX10B": {
+      "python_filename": "mx10b.py",
+      "class_docstring": "Class used to control mx10B digital reference transmitter from Thorlabs via serial communication.",
+      "all_info_with_filename": "File: mx10b.py\nClass: MX10B\nDocstring: Class used to control mx10B digital reference transmitter from Thorlabs via serial communication.\nFunctions:\n  __init__(self, port)\n  send_command(self, command)\n  read_response(self)\n  set_crossing_point_analog(self, n)\n  get_crossing_point_analog(self)\n  set_crossing_point_digital(self, n)\n  get_crossing_point_digital(self)\n  set_gain(self, n)\n  get_gain(self)\n  set_amplifier_mode(self, mode)\n  get_amplifier_mode(self)\n  set_amplifier_power(self, state)\n  get_amplifier_power_status(self)\n  get_amplifier_status(self)\n  set_amplifier_swing(self, n)\n  get_amplifier_swing(self)\n  set_amplifier_swing_vpi(self)\n  set_ITU_channel_number(self, n)\n  get_ITU_channel_number(self)\n  set_dither_on(self)\n  set_dither_off(self)\n  get_dither_status(self)\n  set_fine_tuning_frequency_offset(self, n)\n  get_fine_tuning_frequency_offset(self)\n  get_optical_laser_frequency(self)\n  get_nominal_laser_frequency(self)\n  get_reported_optical_output_power(self)\n  set_laser_power_on(self)\n  set_laser_power_off(self)\n  get_laser_power_status(self)\n  select_c_band_laser(self)\n  select_l_band_laser(self)\n  select_1310nm_laser(self)\n  get_selected_laser(self)\n  get_laser_status(self)\n  get_measured_optical_output_power_dBm(self)\n  get_measured_optical_output_power_mW(self)\n  get_nominal_laser_wavelength(self)\n  get_calibration_status(self)\n  set_dither_amplitude(self, n)\n  get_dither_amplitude(self)\n  set_dither_frequency(self, n)\n  get_dither_frequency(self)\n  set_hold_ratio(self, n)\n  get_hold_ratio(self)\n  set_hold_voltage(self, n)\n  get_hold_voltage(self)\n  set_mzm_bias_mode(self, n)\n  get_mzm_bias_mode(self)\n  trigger_mzm_calibration(self)\n  get_mzm_status(self)\n  get_post_mzm_power_dBm(self)\n  get_post_mzm_power_mW(self)\n  get_mzm_bias_voltage(self)\n  get_system_bootloader_version(self)\n  get_system_firmware_version(self)\n  get_system_hardware_version(self)\n  get_system_model_number(self)\n  trigger_restart(self)\n  get_system_serial_number(self)\n  trigger_sleep(self)\n  trigger_wake(self)\n  set_system_wavelength(self, n)\n  get_system_wavelength(self)\n  set_red_led_brightness(self, n)\n  get_red_led_brightness(self)\n  set_green_led_brightness(self, n)\n  get_green_led_brightness(self)\n  set_blue_led_brightness(self, n)\n  get_blue_led_brightness(self)\n  set_white_led_brightness(self, n)\n  get_white_led_brightness(self)\n  set_leds_power_mode(self, n)\n  get_led_power_status(self)\n  set_optical_attenuation(self, n)\n  get_optical_attenuation(self)\n  get_attenuation_error(self)\n  get_measured_attenuation(self)\n  set_voa_mode_constant_output(self)\n  set_voa_mode_constant_attenuation(self)\n  get_voa_mode(self)\n  set_optical_output_dbm(self, n)\n  get_optical_output_dbm(self)\n  set_optical_output_mw(self, n)\n  get_optical_output_mw(self)\n  set_voa_power_on(self)\n  set_voa_power_off(self)\n  get_voa_power_status(self)\n  get_voa_status(self)\n  get_optical_power_output_dbm(self)\n  get_optical_power_output_mw(self)"
+    },
+    "TLPM": {
+      "python_filename": "tlpm.py",
+      "class_docstring": "Class used to control the Thorlabs power meter. Works with PM100 and PM200 series power meters.",
+      "all_info_with_filename": "File: tlpm.py\nClass: TLPM\nDocstring: Class used to control the Thorlabs power meter. Works with PM100 and PM200 series power meters.\nFunctions:\n  __init__(self, dll_path)\n  init(self, resource_name, id_query, reset_device)\n  close(self, instrument_handle)\n  identification_query(self, instrument_handle)\n  set_avg_time(self, instrument_handle, average_time)\n  set_wavelength(self, instrument_handle, wavelength)\n  set_power_auto_range(self, instrument_handle, power_auto_range_mode)\n  meas_power(self, instrument_handle)\n  __test_for_error(self, instrument_handle, status)\n  __throw_error(self, instrument_handle, status)"
+    },
+    "TLCCS": {
+      "python_filename": "tlccs.py",
+      "class_docstring": "Class used to control CCS compact spectrometers from Thorlabs.\nNeeds TLCCS_64.dll or TLCCS_32.dll depending on the architecture of the python interpreter.",
+      "all_info_with_filename": "File: tlccs.py\nClass: TLCCS\nDocstring: Class used to control CCS compact spectrometers from Thorlabs.\nNeeds TLCCS_64.dll or TLCCS_32.dll depending on the architecture of the python interpreter.\nFunctions:\n  __init__(self, dll_path)\n  init(self, resource_name, id_query, reset_device)\n  identification_query(self, instrument_handle)\n  close(self, instrument_handle)\n  set_integration_time(self, instrument_handle, integration_time)\n  start_scan(self, instrument_handle)\n  get_scan_data(self, instrument_handle)\n  get_wavelength_data(self, instrument_handle, data_set)\n  __test_for_error(self, instrument_handle, status)\n  __throw_error(self, instrument_handle, status)"
+    },
+    "TLUP": {
+      "python_filename": "tlup.py",
+      "class_docstring": "Class used to control Thorlabs upLED driver.",
+      "all_info_with_filename": "File: tlup.py\nClass: TLUP\nDocstring: Class used to control Thorlabs upLED driver.\nFunctions:\n  __init__(self, dll_path)\n  init(self, resource_name, id_query, reset_device)\n  close(self, instrument_handle)\n  find_rsrc(self, instrument_handle)\n  get_rsrc_info(self, instrument_handle, index)\n  measure_device_temperature(self, instrument_handle)\n  switch_led_output(self, instrument_handle, enable_led_output)\n  set_led_current_setpoint(self, instrument_handle, led_current_setpoint)\n  __test_for_error(self, instrument_handle, status)\n  __throw_error(self, instrument_handle, status)"
+    },
+    "TLKST101": {
+      "python_filename": "tlkst101.py",
+      "class_docstring": "A class to control the Thorlabs k-cube Stepper Motor Controller.\nNeeds Thorlabs.MotionControl.KCube.StepperMotor.dll.",
+      "all_info_with_filename": "File: tlkst101.py\nClass: TLKST101\nDocstring: A class to control the Thorlabs k-cube Stepper Motor Controller.\nNeeds Thorlabs.MotionControl.KCube.StepperMotor.dll.\nFunctions:\n  __init__(self, serial_number, dll_path)\n  build_device_list(self)\n  connect(self)\n  home(self)\n  move_to_position_device_units(self, position)\n  wait_for_move(self, num)\n  get_device_unit_from_real_value(self, real_value, unit_type)\n  move_to_position_real_units(self, position)\n  set_velocity_parameters_real_units(self, acceleration, max_velocity)\n  set_velocity_parameters_device_units(self, acceleration, max_velocity)\n  get_position(self)\n  disconnect(self)"
+    }
+  }
