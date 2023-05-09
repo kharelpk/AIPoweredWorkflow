@@ -177,7 +177,14 @@ async function sendLogToBackend(question, answer, ipAddress) {
       while ((match = regex.exec(responseText)) !== null) {
         classNames.push(match[1]);
       }
-  
+      
+
+      if (classNames.length === 0) {
+        setDisplayCode(true);
+        setApiCode("# I'm sorry, I don't have that device yet.\n# Please reach out to us so we can add your device\n# to our platform.")
+        setThinking(false); 
+        return;
+      }
       // Return the list of class names
     //   console.log(classNames);
       const allInfoString = extractAllInfoWithFilename(classNames);
@@ -186,8 +193,6 @@ async function sendLogToBackend(question, answer, ipAddress) {
     //   setApiInfo("I see that you'll need to use the following classes: " + classNames);
       setDisplayCode(true);
       setApiCode("#Using devices: " +classNames+ "\n#Figuring out the code now. Please be patient...:)\n");
-      
-
       await secondQuestion(classNames, inputText, allInfoString);
       setThinking(false);
       return classNames;
