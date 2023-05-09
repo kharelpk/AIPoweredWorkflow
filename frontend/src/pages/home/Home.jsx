@@ -88,14 +88,27 @@ const Home = () => {
 //     };
 //   };
 
-async function sendLogToBackend(question, answer) {
+async function getClientIPAddress() {
+    try {
+      const response = await fetch('https://api.ipify.org?format=json');
+      const data = await response.json();
+      return data.ip;
+    } catch (error) {
+      console.error('Error fetching IP address:', error);
+      return null;
+    }
+  }
+  
+  
+
+async function sendLogToBackend(question, answer, ipAddress) {
     try {
       const response = await fetch('http://127.0.0.1:8000/api/logs/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
         },
-        body: JSON.stringify({ "question":question, "answer":answer }),
+        body: JSON.stringify({ "question":question, "answer":answer, "ipaddress":ipAddress}),
       });
   
       if (!response.ok) {
@@ -217,7 +230,8 @@ async function sendLogToBackend(question, answer) {
     //   console.log(result)
       const parsedResponse = parseResponse(result.choices[0].message.content);
     //   console.log(result.choices[0].message.content);
-      sendLogToBackend(inputText, result.choices[0].message.content);
+      const ipAddress = await getClientIPAddress();
+      sendLogToBackend(inputText, result.choices[0].message.content, ipAddress);
 
     //   console.log("OTHERINFO:::"+ parsedResponse.otherInfo);
     //   console.log("CODE:::"+ parsedResponse.code);
