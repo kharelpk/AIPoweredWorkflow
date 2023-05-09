@@ -165,8 +165,10 @@ async function sendLogToBackend(question, answer, ipAddress) {
   
       const responseText = result.choices[0].message.content;
     //   console.log(responseText);
-      
-      sendLogToBackend(inputText, responseText);
+
+
+      const ipAddress = await getClientIPAddress();
+      sendLogToBackend(inputText, responseText, ipAddress);
   
       // Extract class names using a regular expression
       const regex = /"([A-Za-z0-9_]+)"/g;
