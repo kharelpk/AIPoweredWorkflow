@@ -103,7 +103,7 @@ async function getClientIPAddress() {
 
 async function sendLogToBackend(question, answer, ipAddress) {
     try {
-      const response = await fetch('http://127.0.0.1:8000/api/logs/', {
+      const response = await fetch('https://ctrleaselogs.herokuapp.com/api/logs/get/', {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
