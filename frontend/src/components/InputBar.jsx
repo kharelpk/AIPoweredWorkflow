@@ -8,8 +8,8 @@ const InputBar = ({onSend, onFocus}) => {
   const [inputText, setInputText] = useState('');
 
   const handleSend = () => {
-    console.log('sent');
-    console.log(inputText)
+    // console.log('sent');
+    // console.log(inputText)
     // onSend(inputText);
 
     if (inputText.trim()) {

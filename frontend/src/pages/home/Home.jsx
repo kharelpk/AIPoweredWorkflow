@@ -88,6 +88,29 @@ const Home = () => {
 //     };
 //   };
 
+async function sendLogToBackend(question, answer) {
+    try {
+      const response = await fetch('http://127.0.0.1:8000/api/logs/', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+        },
+        body: JSON.stringify({ "question":question, "answer":answer }),
+      });
+  
+      if (!response.ok) {
+        throw new Error(`HTTP error ${response.status}`);
+      }
+  
+    //   const data = await response.json();
+      await response.json();
+    //   console.log('Data successfully sent to backend:', data);
+    } catch (error) {
+      console.error('Error sending data to backend:', error);
+    }
+  }
+  
+
   function extractAllInfoWithFilename(classNames) {
     const allInfoList = classNames.map(className => {
       if (classFunctions.hasOwnProperty(className)) {
@@ -129,6 +152,8 @@ const Home = () => {
   
       const responseText = result.choices[0].message.content;
     //   console.log(responseText);
+      
+      sendLogToBackend(inputText, responseText);
   
       // Extract class names using a regular expression
       const regex = /"([A-Za-z0-9_]+)"/g;
@@ -192,6 +217,7 @@ const Home = () => {
     //   console.log(result)
       const parsedResponse = parseResponse(result.choices[0].message.content);
     //   console.log(result.choices[0].message.content);
+      sendLogToBackend(inputText, result.choices[0].message.content);
 
     //   console.log("OTHERINFO:::"+ parsedResponse.otherInfo);
     //   console.log("CODE:::"+ parsedResponse.code);
