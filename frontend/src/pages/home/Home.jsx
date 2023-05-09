@@ -249,7 +249,7 @@ const Home = () => {
 
             {showExamplePrompts && (
             <div className="examples mt-4 text-white">
-                    <p className="text-md sticky top-0 mb-4">Automate a wide range of devices like motorized stages, lasers, sensors, cameras and so on.</p>
+                    <p className="text-md sticky top-0 mb-4">Automate a wide range of devices like motorized stages, lasers, sensors, cameras, and so on.</p>
                     <h5 className="text-md font-bold sticky mt-10 top-0 text-[#26947a]">
                     EXAMPLE PROMPTS:
                 </h5>
