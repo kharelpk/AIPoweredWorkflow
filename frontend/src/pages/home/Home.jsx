@@ -254,10 +254,11 @@ const Home = () => {
                     EXAMPLE PROMPTS:
                 </h5>
                     <ul className="list-disc">
-                    <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"Read power from a Thorlabs power meter for 2 seconds and get an average power meter reading."</li>
-                    <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"Home the CNC machine and take a picture using the ueye camera after homing."</li>
-                    <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"I have two Thorlabs stages with brushless dc motor controllers. I am using the pure photonics laser and measuring optical power using Thorlabs power meter. I want to run gradient search optimization of the two stages to maximize optical power."</li>
-                    {/* <li className="ml-10 mt-4 text-white"> "I want to synchronously acquire power readings from a Thorlabs Power meter and images from a ueye camera. The power readings are stored in a database whereas the camera images are stored in numpy array."</li> */}
+                    Here are the corrected paragraphs:
+
+                    <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"Read power from a Thorlabs power meter for 2 seconds and calculate the average power meter reading."</li>
+                    <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"Home the CNC machine, and take a picture using the ueye camera after homing."</li>
+                    <li className="ml-10 mt-4 text-white font-mono Monaco text-sm">"I have two Thorlabs stages with brushless DC motor controllers. I am using the Pure Photonics laser and measuring optical power using a Thorlabs power meter. I want to run gradient search optimization on the two stages to maximize optical power."</li>                    {/* <li className="ml-10 mt-4 text-white"> "I want to synchronously acquire power readings from a Thorlabs Power meter and images from a ueye camera. The power readings are stored in a database whereas the camera images are stored in numpy array."</li> */}
                     </ul>
                 </div>
             )}
