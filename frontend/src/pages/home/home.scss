@@ -162,7 +162,23 @@
     .code-section {
         margin-top: 1rem;
         width: 100%;
+        height: calc(100% - 3rem); // Change from "calc(100% - 5rem)" to "calc(100% - 3rem)"
       }
+      
+      
+
+      @media (max-width: 767px) {
+        .code-section {
+          grid-template-columns: 1fr; // To show only one column on smaller screens
+          gap: 1rem;
+        }
+      }
+
+      @media (max-width: 767px) {
+        .code-section {
+          height: auto;
+        }
+      
 
 
     .examples {
@@ -220,4 +236,4 @@
     
       
   }
-  
+}
