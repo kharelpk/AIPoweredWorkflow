@@ -18,6 +18,12 @@
         "image":"laser.svg"
       },
       {
+        "title": "ESP32",
+        "description": "Microcontroller",
+        "info":"This microcontroller ESP32 is a series of low-cost, low-power system on a chip microcontrollers with integrated Wi-Fi and dual-mode Bluetooth.",
+        "image":"electronics_board.svg"
+      },
+      {
         "title": "CBEAM",
         "description": "CNC machine",
         "info":"The CBEAM CNC machine can be controlled via serial communication.",
@@ -101,6 +107,4 @@
                 "info":"This Thorlabs Polarimeter can be controlled via USB using SCPI communication protocol.",
                 "image":"polarization.svg"
               }
-      
-
   ]

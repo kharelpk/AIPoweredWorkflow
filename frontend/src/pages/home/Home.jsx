@@ -186,7 +186,7 @@ async function sendLogToBackend(question, answer, ipAddress) {
   
     const headers = {
       "Content-Type": "application/json",
-      Authorization: `Bearer ${openAI_API_KEY}`,
+      Authorization: `Bearer ${openAI_API_KEY}`
     };
   
     const prompt = `Here are the functions you have access to inside these ${classNames} classes. Please write me a python code to accomplish the task:  ${inputText} 
@@ -210,6 +210,9 @@ async function sendLogToBackend(question, answer, ipAddress) {
     //   console.log(result)
       const parsedResponse = parseResponse(result.choices[0].message.content);
     //   console.log(result.choices[0].message.content);
+      
+
+    ///////////////////////////////////////////////////////////////////
       const ipAddress = await getClientIPAddress();
       sendLogToBackend(inputText, result.choices[0].message.content, ipAddress);
 
@@ -231,6 +234,65 @@ async function sendLogToBackend(question, answer, ipAddress) {
       setCurrentTask('');
     }
   }
+
+
+//     async function secondQuestion(classNames, inputText, textContent) {
+//     setThinking(true); 
+//     const openAI_API_KEY = process.env.REACT_APP_API_KEY;
+//     const apiUrl = "https://api.openai.com/v1/chat/completions";
+  
+//     const headers = {
+//       "Content-Type": "application/json",
+//       Authorization: `Bearer ${openAI_API_KEY}`,
+//     };
+  
+//     const prompt = `Here are the functions you have access to inside these ${classNames} classes. Please write me a python code to accomplish the task:  ${inputText} 
+//     It is important that you use methods provided for each Python class listed below when communicating with the instruments.  Make sure to comment the code and you do not need to explain the assumptions you made. The result should only have two sections "Assumptions", and "Code".
+//     ${textContent}`;
+
+//     // console.log(prompt);
+//     const data = {
+//       model: "gpt-3.5-turbo",
+//       messages: [{ role: "user", content: prompt }],
+//       temperature: 0.7,
+//     };
+  
+//     try {
+//       const response = await fetch(apiUrl, {
+//         method: "POST",
+//         headers: headers,
+//         body: JSON.stringify(data),
+//       });
+//       const result = await response.json();
+//     //   console.log(result)
+//       const parsedResponse = parseResponse(result.choices[0].message.content);
+//     //   console.log(result.choices[0].message.content);
+      
+    
+
+//       ///////////////////////////////////////////////////////////////////
+//       //   const ipAddress = await getClientIPAddress();
+//     //   sendLogToBackend(inputText, result.choices[0].message.content, ipAddress);
+
+//     //   console.log("OTHERINFO:::"+ parsedResponse.otherInfo);
+//     //   console.log("CODE:::"+ parsedResponse.code);
+//       setApiInfo(parsedResponse.otherInfo);
+//       setApiCode(parsedResponse.code);
+
+
+      
+//       setDisplayCode(true);
+//       setThinking(false); 
+
+//     //   console.log(result.choices[0].message.content);
+      
+//     } catch (error) {
+//       console.error("Error fetching answer from OpenAI API:", error);
+//       setThinking(false); 
+//       setCurrentTask('');
+//     }
+//   }
+  
   
 
   

@@ -88,5 +88,10 @@
       "python_filename": "tlkst101.py",
       "class_docstring": "A class to control the Thorlabs k-cube Stepper Motor Controller.\nNeeds Thorlabs.MotionControl.KCube.StepperMotor.dll.",
       "all_info_with_filename": "File: tlkst101.py\nClass: TLKST101\nDocstring: A class to control the Thorlabs k-cube Stepper Motor Controller.\nNeeds Thorlabs.MotionControl.KCube.StepperMotor.dll.\nFunctions:\n  __init__(self, serial_number, dll_path)\n  build_device_list(self)\n  connect(self)\n  home(self)\n  move_to_position_device_units(self, position)\n  wait_for_move(self, num)\n  get_device_unit_from_real_value(self, real_value, unit_type)\n  move_to_position_real_units(self, position)\n  set_velocity_parameters_real_units(self, acceleration, max_velocity)\n  set_velocity_parameters_device_units(self, acceleration, max_velocity)\n  get_position(self)\n  disconnect(self)"
-    }
+    },
+    "ESP32": {
+        "python_filename": "esp32.py",
+        "class_docstring": "A Python class that interacts with the ESP32 microcontroller using Micropython.\n\nThis class can initialize connection, load a micropython script, and run a micropython script on the ESP32.",
+        "all_info_with_filename": "File: esp32.py\nClass: ESP32\nDocstring: A Python class that interacts with the ESP32 microcontroller using Micropython.\n\nThis class can initialize connection, load a micropython script, and run a micropython script on the ESP32.\nFunctions:\n  __init__(self, esp_port, baud_rate, timeout)\n  initialize_connection(self)\n  load_script(self, script)\n  run_script(self)"
+      }
   }

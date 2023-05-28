@@ -70,6 +70,10 @@ File: tlup.py
 File: tlkst101.py
   Class: TLKST101
   Description: This Class is used to control the Thorlabs k-cube Stepper Motor Controller. Needs Thorlabs.MotionControl.KCube.StepperMotor.dll.
+
+File: esp32.py
+  Class: ESP32
+  Description: This class is used to control ESP32 or esp32 microcontroller using Micropython via Serial connection. 
 `;
 
 export default sampleTextContent;
