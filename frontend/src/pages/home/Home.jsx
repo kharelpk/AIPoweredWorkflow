@@ -123,7 +123,7 @@ async function sendLogToBackend(question, answer, ipAddress) {
     First figure out which devices you will use to accomplish this task from the list of drivers written in python below. I just want a list of class names to accomplish this task in json file.\n ${sampleTextContent}\n`;
     // console.log(prompt);
     const data = {
-      model: "gpt-3.5-turbo",
+      model: "gpt-3.5-turbo-0301",
       messages: [{ role: "assistant", content: prompt }],
       temperature: 0.3,
     };
@@ -195,7 +195,7 @@ async function sendLogToBackend(question, answer, ipAddress) {
 
     // console.log(prompt);
     const data = {
-      model: "gpt-3.5-turbo",
+      model: "gpt-3.5-turbo-0301",
       messages: [{ role: "user", content: prompt }],
       temperature: 0.7,
     };
